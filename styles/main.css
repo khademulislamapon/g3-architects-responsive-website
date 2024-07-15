@@ -126,8 +126,80 @@ main, footer, .header-section{
     font-size: 1rem;
     margin: 24px 0 32px;
 }
+/* features-container */
+.features-container{
+    height: 1059px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.features-text{
+    max-width: 586px;
+    height: 982px;
+    margin: 39px 146px 39px 0;
+}
+.features-text-top{
+    padding-bottom: 30px;
+}
+.features-text-top h2{
+    max-width: 468px;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.features-text-top p{
+    padding-top: 24px;
+    font-size: 1rem;
+}
+.features-text-bottom{}
+
+.feature-text-box{
+    max-width: 586px;
+    height: 171px;
+    background-color: #FFFFFF;
+    padding: 30px 42px 30px 30px;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+.feature-text-box h3{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.feature-text-box p{
+    font-size: 1rem;
+}
+
+.features-img{}
+.features-img img{
+    max-width: 100%;
+}
+.features-img-but{
+    background-color: #FF900E;
+    border: none;
+    max-width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 45px 42px;
+    margin-left: -92px;
+    margin-top: -123px;
+}
+.features-img-but h5{
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.features-img-but h6{
+    color: white;
+    font-weight: 500;
+    font-size: 1.56rem;
+}
+
 /* fact-container */
-.fact-container{}
+.fact-container{
+    margin: 130px 0 0;
+}
 
 .fact-content-card{
     display: grid;
@@ -174,6 +246,7 @@ main, footer, .header-section{
 .sponspors-logo img{
     margin: 0 auto;
 }
+
 /* footer-section */
 .footer-section{
     height: 100px;
@@ -190,7 +263,8 @@ main, footer, .header-section{
 @media screen and (max-width:576px){
     .nav-section, 
     .menu-section, 
-    .our-features-container{
+    .our-features-container, 
+    .features-container{
         flex-direction: column;
     }
     .our-feature-img, 
@@ -214,5 +288,23 @@ main, footer, .header-section{
     }
     .sponspors-logo img{
         margin: 0 auto 30px;
+    }
+    .features-text-top{
+        margin: 0 20px;
+    }
+
+    .features-img{
+        margin: 90px auto 0;
+    }
+    
+    .features-img-but{
+        display: none;
+        /* visibility: hidden; */
+    }
+    .features-text{
+        margin: 0 auto;
+    }
+    .fact-container{
+        margin-top: 600px;
     }
 }
