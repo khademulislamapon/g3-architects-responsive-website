@@ -22,9 +22,20 @@
     font-size: 1.2rem;
     border-radius: 8px;
 }
-main, footer{
+main, footer, .header-section{
     margin: 0 auto;
     max-width: 1440px;
+}
+.content-text{
+    max-width: 542px;
+}
+.content-text h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.content-text p{
+    font-weight: 1rem;
 }
 
 .dark1{
@@ -42,7 +53,7 @@ main, footer{
 
 /* header section */
 .header-container{
-    max-width: 1920px;
+    /* max-width: 1920px; */
     height: 1322px;
     background-color: rgba(255, 144, 14, 0.1);
     border: 1px solid rgba(255, 144, 14, 0.1);
@@ -51,7 +62,7 @@ main, footer{
 .nav-section{
     justify-content: space-between;
     align-items: center;
-    max-width: 1452px;
+    /* max-width: 1452px; */
     margin: 50px auto 102px;
 }
 .brand{
@@ -70,8 +81,8 @@ main, footer{
 }
 
 .header-content-section{
-    margin: 0 auto;
-    max-width: 1440px;
+    /* margin: 0 auto;
+    max-width: 1440px; */
 }
 .header-content{
     max-width: 868px;
@@ -118,21 +129,10 @@ main, footer{
 /* fact-container */
 .fact-container{}
 
-.fact-content-text{
-    max-width: 542px;
-}
-.fact-content-text h2{
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 24px;
-}
-.fact-content-text p{
-    font-weight: 1rem;
-}
-
 .fact-content-card{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
 }
 .card{
     border: 1px solid #FF900E;
@@ -157,6 +157,34 @@ main, footer{
     font-weight: 600;
     font-size: 1.2rem;
 }
+/* sponspors section */
+.sponspors-container{}
+
+.align-items{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponspors-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    filter: grayscale(100%);
+    margin: 50px auto 130px;
+}
+.sponspors-logo img{
+    margin: 0 auto;
+}
+/* footer-section */
+.footer-section{
+    height: 100px;
+    background-color: #FFF4E7;
+    margin-bottom: 216px;
+}
+.footer-section p{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 39px 0;
+}
 
 /* ----responsive---- */
 @media screen and (max-width:576px){
@@ -166,7 +194,8 @@ main, footer{
         flex-direction: column;
     }
     .our-feature-img, 
-    .fact-content-card{
+    .fact-content-card, 
+    .sponspors-logo{
         grid-template-columns: 1fr;
     }
     .our-feature-text{
@@ -178,9 +207,12 @@ main, footer{
     .card{
         margin: 0 auto 15px;
     }
-    .fact-content-text{
+    .fact, .align-items{
         padding: 0 20px;
         text-align: center;
         margin: 0 auto;
+    }
+    .sponspors-logo img{
+        margin: 0 auto 30px;
     }
 }
